@@ -66,6 +66,7 @@ console.log(returnValueFromUsingPush); // 5
 - splice
 - indexOf
 - concat
+- includes
 - map
 - filter
 - find
@@ -82,6 +83,7 @@ console.log(returnValueFromUsingPush); // 5
 - slice
 - toUpperCase
 - toLowerCase
+- includes
 
 ### Objects
 
