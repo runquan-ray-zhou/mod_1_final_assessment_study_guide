@@ -208,8 +208,8 @@ function sumOddNumbersArray(arr) {
 
 // Write a function to find the maximum number in an array using a loop and the accumulator pattern.
 
-console.log(findMaxUsingLoop([1, 5, 3, 8, 2])); // Output: 8
-console.log(findMaxUsingLoop([1, 5, 3, 2])); // Output: 5
+// console.log(findMaxUsingLoop([1, 5, 3, 8, 2])); // Output: 8
+// console.log(findMaxUsingLoop([1, 5, 3, 2])); // Output: 5
 
 function findMaxUsingLoop(arr) {
     let maxNum = arr[0];
@@ -229,6 +229,10 @@ function findMaxUsingLoop(arr) {
 // console.log(findMinUsingReduce([1, 5, 3, 8, 2])); // Output: 1
 
 // console.log(findMinUsingReduce([5, 3, 8, 2])); // Output: 2
+
+function findMinUsingReduce(arr) {
+    return arr.reduce((acc, cur) => acc < cur ? cur = acc : cur)
+}
 
 // ------------------------------------------------------------
 
