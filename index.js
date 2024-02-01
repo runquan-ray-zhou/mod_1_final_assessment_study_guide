@@ -2,7 +2,9 @@
 
 // console.log(evenOrOdd(5)); // Output: 'odd'
 // console.log(evenOrOdd(4)); // Output: 'even'
-
+function evenOrOdd(num) {
+    return num % 2 === 0 ? "even" : "odd"
+}
 // ------------------------------------------------------------
 
 // Create a function that checks if the length of a given string is greater than a specified number. Return true or false.
