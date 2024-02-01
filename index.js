@@ -2,6 +2,7 @@
 
 // console.log(evenOrOdd(5)); // Output: 'odd'
 // console.log(evenOrOdd(4)); // Output: 'even'
+
 function evenOrOdd(num) {
     return num % 2 === 0 ? "even" : "odd"
 }
@@ -12,6 +13,7 @@ function evenOrOdd(num) {
 // console.log(isStringLengthGreaterThan("Hello, World!", 5)); // Output: true
 
 // console.log(isStringLengthGreaterThan("Hello", 5)); // Output: false
+
 function isStringLengthGreaterThan(str, num) {
     return str.length > num
 }
@@ -20,6 +22,10 @@ function isStringLengthGreaterThan(str, num) {
 // Implement a function that concatenates two strings and returns the result.
 
 // console.log(concatenateStrings("Hello", "World")); // Output: 'HelloWorld'
+
+function concatenateStrings(str1, str2) {
+    return str1 + str2
+}
 
 // ------------------------------------------------------------
 
