@@ -190,7 +190,7 @@ function getMidIndexElement(arr) {
 // console.log(sumArray([1, 2, 3, 4, 5])); // Output: 15
 
 function sumArray(arr) {
-    return arr.reduce((a, b) => a + b)
+    return arr.reduce((acc, cur) => acc + cur)
 }
 
 // ------------------------------------------------------------
@@ -199,6 +199,10 @@ function sumArray(arr) {
 
 // console.log(sumOddNumbersArray([1, 2, 3, 4])); // Output: 4
 // console.log(sumOddNumbersArray([1, 2, 3, 4, 5])); // Output: 9
+
+function sumOddNumbersArray(arr) {
+    return arr.reduce((acc, cur) => cur % 2 === 1 ? acc + cur : acc)
+}
 
 // ------------------------------------------------------------
 
