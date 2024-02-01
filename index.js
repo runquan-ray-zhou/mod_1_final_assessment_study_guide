@@ -189,6 +189,10 @@ function getMidIndexElement(arr) {
 // console.log(sumArray([1, 2, 3, 4])); // Output: 10
 // console.log(sumArray([1, 2, 3, 4, 5])); // Output: 15
 
+function sumArray(arr) {
+    return arr.reduce((a, b) => a + b)
+}
+
 // ------------------------------------------------------------
 
 // Create a function that returns the sum of all odd or even numbers in an array.
