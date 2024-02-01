@@ -103,6 +103,13 @@ function getLastElement(arr) {
 // console.log(replaceElementAtIndex([1, 2, 3], 1, 5)); // Output: [1, 5, 3]
 // console.log(replaceElementAtIndex([1, 2, 3], 2, 6)); // Output: [1, 5, 6]
 
+function replaceElementAtIndex(arr, index, ele) {
+
+    arr[index] = ele;
+
+    return arr
+}
+
 // ------------------------------------------------------------
 
 // Develop a function that removes an element from the beginning of an array.
