@@ -178,6 +178,10 @@ function capitalizeWords(str) {
 
 // console.log(getMidIndexElement([1, 2, 3, 4, 5, 6, 7])); // Output: 4
 
+function getMidIndexElement(arr) {
+    return arr[Math.floor(arr.length / 2)]
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to calculate the sum of all numbers in an array.
