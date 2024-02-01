@@ -114,8 +114,15 @@ function replaceElementAtIndex(arr, index, ele) {
 
 // Develop a function that removes an element from the beginning of an array.
 
-// console.log(removeFirstElement([1, 2, 3])); // Output: [2, 3]
-// console.log(removeFirstElement([0, 1, 2, 3])); // Output: [1, 2, 3]
+console.log(removeFirstElement([1, 2, 3])); // Output: [2, 3]
+console.log(removeFirstElement([0, 1, 2, 3])); // Output: [1, 2, 3]
+
+function removeFirstElement(arr) {
+
+    arr.shift()
+
+    return arr
+}
 
 // ------------------------------------------------------------
 
