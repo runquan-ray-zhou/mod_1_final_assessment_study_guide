@@ -166,6 +166,10 @@ function toUpperCaseString(str) {
 // console.log(capitalizeWords("hello world")); // Output: 'Hello World'
 // console.log(capitalizeWords("whats up joe?")); // Output: 'Whats Up Joe?'
 
+function capitalizeWords(str) {
+    return str.split(" ").map(word => word[0].toUpperCase() + word.slice(1)).join(" ")
+}
+
 // ------------------------------------------------------------
 
 // Develop a function that returns the element at the middle index of an array.
