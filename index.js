@@ -12,7 +12,9 @@ function evenOrOdd(num) {
 // console.log(isStringLengthGreaterThan("Hello, World!", 5)); // Output: true
 
 // console.log(isStringLengthGreaterThan("Hello", 5)); // Output: false
-
+function isStringLengthGreaterThan(str, num) {
+    return str.length > num
+}
 // ------------------------------------------------------------
 
 // Implement a function that concatenates two strings and returns the result.
