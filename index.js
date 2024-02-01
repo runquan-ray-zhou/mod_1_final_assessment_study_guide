@@ -81,6 +81,10 @@ function sumOddNumbersInRange(num1, num2) {
 // console.log(getFirstElement([1, 2, 3])); // Output: 1
 // console.log(getFirstElement([2, 3])); // Output: 2
 
+function getFirstElement(arr) {
+    return arr[0]
+}
+
 // ------------------------------------------------------------
 
 // Write a function to get the last element of an array.
