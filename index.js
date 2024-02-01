@@ -114,8 +114,8 @@ function replaceElementAtIndex(arr, index, ele) {
 
 // Develop a function that removes an element from the beginning of an array.
 
-console.log(removeFirstElement([1, 2, 3])); // Output: [2, 3]
-console.log(removeFirstElement([0, 1, 2, 3])); // Output: [1, 2, 3]
+// console.log(removeFirstElement([1, 2, 3])); // Output: [2, 3]
+// console.log(removeFirstElement([0, 1, 2, 3])); // Output: [1, 2, 3]
 
 function removeFirstElement(arr) {
 
@@ -128,8 +128,12 @@ function removeFirstElement(arr) {
 
 // Create a function to remove an element from the end of an array and return the removed element.
 
-// console.log(removeLastElement([1, 2, 3])); // Output: 3
-// console.log(removeLastElement([1, 2, 3, 4])); // Output: 4
+console.log(removeLastElement([1, 2, 3])); // Output: 3
+console.log(removeLastElement([1, 2, 3, 4])); // Output: 4
+
+function removeLastElement(arr) {
+    return arr.pop()
+}
 
 // ------------------------------------------------------------
 
