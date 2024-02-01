@@ -241,6 +241,10 @@ function findMinUsingReduce(arr) {
 // console.log(findMaxUsingMathMax([1, 5, 3, 8, 2])); // Output: 8
 // console.log(findMaxUsingMathMax([1, 5, 19, 8, 2])); // Output: 19
 
+function findMaxUsingMathMax(arr) {
+    return Math.max(...arr)
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to create a new array with all numbers doubled using a for loop and the accumulator pattern.
