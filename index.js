@@ -4,7 +4,7 @@
 // console.log(evenOrOdd(4)); // Output: 'even'
 
 function evenOrOdd(num) {
-    return num % 2 === 0 ? "even" : "odd"
+    return num % 2 === 0 ? "even" : "odd";
 }
 // ------------------------------------------------------------
 
@@ -15,7 +15,7 @@ function evenOrOdd(num) {
 // console.log(isStringLengthGreaterThan("Hello", 5)); // Output: false
 
 function isStringLengthGreaterThan(str, num) {
-    return str.length > num
+    return str.length > num;
 }
 // ------------------------------------------------------------
 
@@ -24,7 +24,7 @@ function isStringLengthGreaterThan(str, num) {
 // console.log(concatenateStrings("Hello", "World")); // Output: 'HelloWorld'
 
 function concatenateStrings(str1, str2) {
-    return str1 + str2
+    return str1 + str2;
 }
 
 // ------------------------------------------------------------
@@ -36,7 +36,7 @@ function concatenateStrings(str1, str2) {
 // console.log(interpolateVariable("My age is: ", 30)); // Output: 'My age is: 25'
 
 function interpolateVariable(str, variable) {
-    return str + `${variable}`
+    return str + `${variable}`;
 }
 
 // ------------------------------------------------------------
@@ -50,10 +50,10 @@ function sumRange(num1, num2) {
     let sum = 0;
 
     for (let i = num1; i <= num2; i++) {
-        sum += i
+        sum += i;
     }
 
-    return sum
+    return sum;
 }
 
 // ------------------------------------------------------------
@@ -67,10 +67,10 @@ function sumOddNumbersInRange(num1, num2) {
     let sum = 0;
 
     for (let i = num1; i <= num2; i++) {
-        if (i % 2 === 1) sum += i
+        if (i % 2 === 1) sum += i;
     }
 
-    return sum
+    return sum;
 }
 
 // ------------------------------------------------------------
@@ -81,7 +81,7 @@ function sumOddNumbersInRange(num1, num2) {
 // console.log(getFirstElement([2, 3])); // Output: 2
 
 function getFirstElement(arr) {
-    return arr[0]
+    return arr[0];
 }
 
 // ------------------------------------------------------------
@@ -92,7 +92,7 @@ function getFirstElement(arr) {
 // console.log(getLastElement([1, 2, 3, 4])); // Output: 4
 
 function getLastElement(arr) {
-    return arr[arr.length - 1]
+    return arr[arr.length - 1];
 }
 
 // ------------------------------------------------------------
@@ -106,7 +106,7 @@ function replaceElementAtIndex(arr, index, ele) {
 
     arr[index] = ele;
 
-    return arr
+    return arr;
 }
 
 // ------------------------------------------------------------
@@ -118,9 +118,9 @@ function replaceElementAtIndex(arr, index, ele) {
 
 function removeFirstElement(arr) {
 
-    arr.shift()
+    arr.shift();
 
-    return arr
+    return arr;
 }
 
 // ------------------------------------------------------------
@@ -131,7 +131,7 @@ function removeFirstElement(arr) {
 // console.log(removeLastElement([1, 2, 3, 4])); // Output: 4
 
 function removeLastElement(arr) {
-    return arr.pop()
+    return arr.pop();
 }
 
 // ------------------------------------------------------------
@@ -143,9 +143,9 @@ function removeLastElement(arr) {
 
 function removeElementAtIndex(arr, index) {
 
-    arr.splice(index, 1)
+    arr.splice(index, 1);
 
-    return arr
+    return arr;
 }
 
 // ------------------------------------------------------------
@@ -156,7 +156,7 @@ function removeElementAtIndex(arr, index) {
 // console.log(toUpperCaseString("world")); // Output: 'WORLD'
 
 function toUpperCaseString(str) {
-    return str.toUpperCase()
+    return str.toUpperCase();
 }
 
 // ------------------------------------------------------------
@@ -167,7 +167,7 @@ function toUpperCaseString(str) {
 // console.log(capitalizeWords("whats up joe?")); // Output: 'Whats Up Joe?'
 
 function capitalizeWords(str) {
-    return str.split(" ").map(word => word[0].toUpperCase() + word.slice(1)).join(" ")
+    return str.split(" ").map(word => word[0].toUpperCase() + word.slice(1)).join(" ");
 }
 
 // ------------------------------------------------------------
@@ -179,7 +179,7 @@ function capitalizeWords(str) {
 // console.log(getMidIndexElement([1, 2, 3, 4, 5, 6, 7])); // Output: 4
 
 function getMidIndexElement(arr) {
-    return arr[Math.floor(arr.length / 2)]
+    return arr[Math.floor(arr.length / 2)];
 }
 
 // ------------------------------------------------------------
@@ -190,7 +190,7 @@ function getMidIndexElement(arr) {
 // console.log(sumArray([1, 2, 3, 4, 5])); // Output: 15
 
 function sumArray(arr) {
-    return arr.reduce((acc, cur) => acc + cur)
+    return arr.reduce((acc, cur) => acc + cur);
 }
 
 // ------------------------------------------------------------
@@ -201,7 +201,7 @@ function sumArray(arr) {
 // console.log(sumOddNumbersArray([1, 2, 3, 4, 5])); // Output: 9
 
 function sumOddNumbersArray(arr) {
-    return arr.reduce((acc, cur) => cur % 2 === 1 ? acc + cur : acc)
+    return arr.reduce((acc, cur) => cur % 2 === 1 ? acc + cur : acc);
 }
 
 // ------------------------------------------------------------
@@ -215,10 +215,10 @@ function findMaxUsingLoop(arr) {
     let maxNum = arr[0];
 
     for (let num of arr) {
-        if (num > maxNum) maxNum = num
+        if (num > maxNum) maxNum = num;
     }
 
-    return maxNum
+    return maxNum;
 }
 
 
@@ -231,7 +231,7 @@ function findMaxUsingLoop(arr) {
 // console.log(findMinUsingReduce([5, 3, 8, 2])); // Output: 2
 
 function findMinUsingReduce(arr) {
-    return arr.reduce((acc, cur) => acc < cur ? cur = acc : cur)
+    return arr.reduce((acc, cur) => acc < cur ? cur = acc : cur);
 }
 
 // ------------------------------------------------------------
@@ -242,7 +242,7 @@ function findMinUsingReduce(arr) {
 // console.log(findMaxUsingMathMax([1, 5, 19, 8, 2])); // Output: 19
 
 function findMaxUsingMathMax(arr) {
-    return Math.max(...arr)
+    return Math.max(...arr);
 }
 
 // ------------------------------------------------------------
@@ -253,13 +253,13 @@ function findMaxUsingMathMax(arr) {
 // console.log(doubleNumbersUsingLoop([1, 3, 7, 10])); // Output: [2, 6, 14, 20]
 
 function doubleNumbersUsingLoop(arr) {
-    let newArray = []
+    let newArray = [];
 
     for (let num of arr) {
-        newArray.push(num + num)
+        newArray.push(num + num);
     }
 
-    return newArray
+    return newArray;
 }
 
 // ------------------------------------------------------------
@@ -270,7 +270,7 @@ function doubleNumbersUsingLoop(arr) {
 // console.log(doubleNumbersUsingLoop([1, 3, 7, 10])); // Output: [2, 6, 14, 20]
 
 function doubleNumbersUsingMap(arr) {
-    return arr.map(num => num * 2)
+    return arr.map(num => num * 2);
 }
 
 // ------------------------------------------------------------
