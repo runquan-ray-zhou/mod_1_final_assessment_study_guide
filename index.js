@@ -252,6 +252,16 @@ function findMaxUsingMathMax(arr) {
 // console.log(doubleNumbersUsingLoop([1, 2, 3])); // Output: [2, 4, 6]
 // console.log(doubleNumbersUsingLoop([1, 3, 7, 10])); // Output: [2, 6, 14, 20]
 
+function doubleNumbersUsingLoop(arr) {
+    let newArray = []
+
+    for (let num of arr) {
+        newArray.push(num + num)
+    }
+
+    return newArray
+}
+
 // ------------------------------------------------------------
 
 // Write a function to create a new array with all numbers doubled using the .map method.
