@@ -43,8 +43,8 @@ function interpolateVariable(str, variable) {
 
 // Develop a function that calculates the sum of numbers in a given range.
 
-console.log(sumRange(1, 5)); // Output: 15
-console.log(sumRange(1, 6)); // Output: 21
+// console.log(sumRange(1, 5)); // Output: 15
+// console.log(sumRange(1, 6)); // Output: 21
 
 function sumRange(num1, num2) {
     let sum = 0;
@@ -63,6 +63,16 @@ function sumRange(num1, num2) {
 
 // console.log(sumOddNumbersInRange(1, 10)); // Output: 25
 // console.log(sumOddNumbersInRange(1, 11)); // Output: 36
+
+function sumOddNumbersInRange(num1, num2) {
+    let sum = 0;
+
+    for (let i = num1; i <= num2; i++) {
+        if (i % 2 === 1) sum += i
+    }
+
+    return sum
+}
 
 // ------------------------------------------------------------
 
