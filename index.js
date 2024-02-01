@@ -269,6 +269,10 @@ function doubleNumbersUsingLoop(arr) {
 // console.log(doubleNumbersUsingMap([1, 2, 3])); // Output: [2, 4, 6]
 // console.log(doubleNumbersUsingLoop([1, 3, 7, 10])); // Output: [2, 6, 14, 20]
 
+function doubleNumbersUsingMap(arr) {
+    return arr.map(num => num * 2)
+}
+
 // ------------------------------------------------------------
 
 // Develop a function to create a new array with only the odd numbers using a for loop and the accumulator pattern.
