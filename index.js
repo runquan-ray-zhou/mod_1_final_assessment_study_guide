@@ -92,6 +92,10 @@ function getFirstElement(arr) {
 // console.log(getLastElement([1, 2, 3])); // Output: 3
 // console.log(getLastElement([1, 2, 3, 4])); // Output: 4
 
+function getLastElement(arr) {
+    return arr[arr.length - 1]
+}
+
 // ------------------------------------------------------------
 
 // Build a function to replace an element at a specific index in an array and returns the altered array.
