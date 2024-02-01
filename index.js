@@ -54,7 +54,6 @@ function sumRange(num1, num2) {
     }
 
     return sum
-
 }
 
 // ------------------------------------------------------------
@@ -128,8 +127,8 @@ function removeFirstElement(arr) {
 
 // Create a function to remove an element from the end of an array and return the removed element.
 
-console.log(removeLastElement([1, 2, 3])); // Output: 3
-console.log(removeLastElement([1, 2, 3, 4])); // Output: 4
+// console.log(removeLastElement([1, 2, 3])); // Output: 3
+// console.log(removeLastElement([1, 2, 3, 4])); // Output: 4
 
 function removeLastElement(arr) {
     return arr.pop()
@@ -139,8 +138,15 @@ function removeLastElement(arr) {
 
 // Implement a function to remove an element at a given index in an array and returns the input array.
 
-// console.log(removeElementAtIndex([1, 2, 3], 1)); // Output: [1, 3]
-// console.log(removeElementAtIndex([1, 2, 3], 2)); // Output: [1, 2]
+console.log(removeElementAtIndex([1, 2, 3], 1)); // Output: [1, 3]
+console.log(removeElementAtIndex([1, 2, 3], 2)); // Output: [1, 2]
+
+function removeElementAtIndex(arr, index) {
+
+    arr.splice(index, 1)
+
+    return arr
+}
 
 // ------------------------------------------------------------
 
