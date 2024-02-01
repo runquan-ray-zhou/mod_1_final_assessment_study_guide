@@ -138,8 +138,8 @@ function removeLastElement(arr) {
 
 // Implement a function to remove an element at a given index in an array and returns the input array.
 
-console.log(removeElementAtIndex([1, 2, 3], 1)); // Output: [1, 3]
-console.log(removeElementAtIndex([1, 2, 3], 2)); // Output: [1, 2]
+// console.log(removeElementAtIndex([1, 2, 3], 1)); // Output: [1, 3]
+// console.log(removeElementAtIndex([1, 2, 3], 2)); // Output: [1, 2]
 
 function removeElementAtIndex(arr, index) {
 
@@ -154,6 +154,10 @@ function removeElementAtIndex(arr, index) {
 
 // console.log(toUpperCaseString("hello")); // Output: 'HELLO'
 // console.log(toUpperCaseString("world")); // Output: 'WORLD'
+
+function toUpperCaseString(str) {
+    return str.toUpperCase()
+}
 
 // ------------------------------------------------------------
 
