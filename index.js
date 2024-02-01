@@ -31,9 +31,13 @@ function concatenateStrings(str1, str2) {
 
 // Write a function using interpolation to generate a string that includes the value of a given variable.
 
-// console.log(interpolateVariable("My age is: ", 25)); // Output: 'My age is: 25'
+console.log(interpolateVariable("My age is: ", 25)); // Output: 'My age is: 25'
 
-// console.log(interpolateVariable("My age is: ", 30)); // Output: 'My age is: 25'
+console.log(interpolateVariable("My age is: ", 30)); // Output: 'My age is: 25'
+
+function interpolateVariable(str, variable) {
+    return str + `${variable}`
+}
 
 // ------------------------------------------------------------
 
