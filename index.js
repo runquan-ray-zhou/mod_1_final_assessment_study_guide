@@ -31,9 +31,9 @@ function concatenateStrings(str1, str2) {
 
 // Write a function using interpolation to generate a string that includes the value of a given variable.
 
-console.log(interpolateVariable("My age is: ", 25)); // Output: 'My age is: 25'
+// console.log(interpolateVariable("My age is: ", 25)); // Output: 'My age is: 25'
 
-console.log(interpolateVariable("My age is: ", 30)); // Output: 'My age is: 25'
+// console.log(interpolateVariable("My age is: ", 30)); // Output: 'My age is: 25'
 
 function interpolateVariable(str, variable) {
     return str + `${variable}`
@@ -43,8 +43,19 @@ function interpolateVariable(str, variable) {
 
 // Develop a function that calculates the sum of numbers in a given range.
 
-// console.log(sumRange(1, 5)); // Output: 15
-// console.log(sumRange(1, 6)); // Output: 21
+console.log(sumRange(1, 5)); // Output: 15
+console.log(sumRange(1, 6)); // Output: 21
+
+function sumRange(num1, num2) {
+    let sum = 0;
+
+    for (let i = num1; i <= num2; i++) {
+        sum += i
+    }
+
+    return sum
+
+}
 
 // ------------------------------------------------------------
 
