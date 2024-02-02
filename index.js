@@ -400,6 +400,10 @@ function keysArray(obj) {
 // console.log(valuesArray({ key1: 'value1', key2: 'value2' })); 
 // Output: ['value1', 'value2']
 
+function valuesArray(obj) {
+    return Object.values(obj);
+}
+
 // ------------------------------------------------------------
 
 // Write a function to round up a decimal number.
