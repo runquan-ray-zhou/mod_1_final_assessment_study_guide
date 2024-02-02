@@ -483,6 +483,10 @@ function factorial(num) {
 // console.log(reverseString("hello")); // Output: 'olleh'
 // console.log(reverseString("hello world")); // Output: 'dlrow olleh'
 
+function reverseString(str) {
+    return str.split("").reverse().join("")
+}
+
 // ------------------------------------------------------------
 
 // Develop a function to convert a temperature from Celsius to Fahrenheit.
