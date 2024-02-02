@@ -444,6 +444,10 @@ function sumArrayReduce(arr) {
 // console.log(productArrayReduce([1, 2, 3, 4])); // Output: 24
 // console.log(productArrayReduce([1, 2, 3, 4, 5])); // Output: 120
 
+function productArrayReduce(arr) {
+    return arr.reduce((acc, cur) => acc * cur, 1)
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to calculate the average of numbers in an array.
