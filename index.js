@@ -280,6 +280,16 @@ function doubleNumbersUsingMap(arr) {
 // console.log(oddNumbersUsingLoop([1, 2, 3])); // Output: [1, 3]
 // console.log(oddNumbersUsingLoop([2, 3, 4, 5, 6, 7])); // Output: [3, 5 ,7]
 
+function oddNumbersUsingLoop(arr) {
+    let newArray = [];
+
+    for (let num of arr) {
+       if (num % 2 === 1) newArray.push(num)
+    }
+
+    return newArray;
+}
+
 // ------------------------------------------------------------
 
 // Create a function to create a new array with only the odd numbers using the .filter method.
