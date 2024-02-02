@@ -389,6 +389,10 @@ function elementsCountObject(arr) {
 // console.log(keysArray({ key1: 'value1', key2: 'value2' })); 
 // Output: ['key1', 'key2']
 
+function keysArray(obj) {
+    return Object.keys(obj);
+}
+
 // ------------------------------------------------------------
 
 // Develop a function to return an array of all the values in an object.
