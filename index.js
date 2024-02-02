@@ -692,6 +692,10 @@ function arrayValuesByKey(arr, targetKey) {
 // console.log(roundToNearestWholeNumber(3.4)); // Output: 3
 // console.log(roundToNearestWholeNumber(3.9)); // Output: 4
 
+function roundToNearestWholeNumber(num) {
+    return Math.round(num)
+}
+
 // ------------------------------------------------------------
 
 // Write a function that takes an object and a property name, and removes the specified property from the object.
