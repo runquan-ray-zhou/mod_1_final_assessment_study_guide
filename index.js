@@ -719,7 +719,7 @@ function removeProperty(obj, targetKey) {
 
 // Write a function that takes two objects and merges them into a new object.
 
-console.log(mergeObjects({ name: 'John' }, { age: 30 })); 
+// console.log(mergeObjects({ name: 'John' }, { age: 30 })); 
 // Output: { name: 'John', age: 30 }
 
 function mergeObjects(obj1, obj2) {
@@ -735,6 +735,22 @@ function mergeObjects(obj1, obj2) {
 //   { key: 'array2', value: [1, 2, 3, 4, 5, 6] },
 //   { key: 'array3', value: [1, 2] }
 // ])); // Output: { key: 'array2', value: [1, 2, 3, 4, 5, 6] }
+
+function findObjectWithLongestValue(arr) {
+    let longestArrayLength = -Infinity;
+    let objectWithLongestArrayValue;
+
+    for (let obj of arr) {
+        for (let key in obj) {
+            if (typeof obj[key] === "object" && obj[key].length > longestArrayLength) {
+                longestArrayLength = obj[key].length;
+                objectWithLongestArrayValue = obj;
+            }
+        }
+    }
+
+    return objectWithLongestArrayValue;
+}
 
 // ------------------------------------------------------------
 
