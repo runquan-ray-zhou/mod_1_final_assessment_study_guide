@@ -587,7 +587,6 @@ function capitalizeFirstLetter(str) {
 // console.log(isNumberInRange(12, 1, 10)); // Output: false
 
 function isNumberInRange(num, start, end) {
-
     return num >= start && num <= end
 }
 
@@ -595,8 +594,20 @@ function isNumberInRange(num, start, end) {
 
 // Develop a function to count the number of vowels in a string.
 
-// console.log(countVowels("Hello, World!")); // Output: 3
-// console.log(countVowels("Good Morning")); // Output: 4
+console.log(countVowels("Hello, World!")); // Output: 3
+console.log(countVowels("Good Morning")); // Output: 4
+
+function countVowels(str) {
+
+    let count = 0;
+    const vowelsArray = ["a", "e", "i", "o", "u"];
+
+    for (let char of str) {
+        if(vowelsArray.includes(char)) count ++;
+    }
+
+    return count;
+}
 
 // ------------------------------------------------------------
 
