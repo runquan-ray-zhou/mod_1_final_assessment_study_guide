@@ -815,6 +815,10 @@ function isPalindrome(str) {
 
 // console.log(trimWhitespace("  hello  ")); // Output: 'hello'
 
+function trimWhitespace(str) {
+    return str.trim()
+}
+
 // ------------------------------------------------------------
 
 // Write a function to check if a given string contains a specific substring.
