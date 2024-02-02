@@ -357,6 +357,11 @@ function setKeyValueInObject(obj, key, value) {
 // console.log(uniqueElementsArray([1, 2, 2, 3])); // Output: [1, 2, 3]
 // console.log(uniqueElementsArray([1, 2, 2, 3, 3, 4, 3, 2])); // Output: [1, 2, 3, 4]
 
+function uniqueElementsArray(arr) {
+    return arr.reduce((acc, cur) => { if(!acc.includes(cur)) acc.push(cur) 
+        return acc }, [] )
+}
+
 // ------------------------------------------------------------
 
 // Write a function to return an object with the elements as keys and the count of them as values.
