@@ -794,7 +794,7 @@ function removeDuplicates(arr) {
 // Output: [ { name: 'John', age: 30, city: 'New York' }, { name: 'Bob', age: 35, city: 'New York' } ]
 
 function filterObjectsByProperty(arr, key, value) {
-    return arr.filter(obj => obj[key] && obj[key] === value)
+    return arr.filter(obj => obj[key] && obj[key] === value);
 }
 
 // ------------------------------------------------------------
@@ -802,6 +802,12 @@ function filterObjectsByProperty(arr, key, value) {
 // Create a function that checks if a string is a palindrome.
 
 // console.log(isPalindrome("racecar")); // Output: true
+
+function isPalindrome(str) {
+    const reverseStr = str.split("").reverse().join("");
+
+    return reverseStr === str;
+}
 
 // ------------------------------------------------------------
 
