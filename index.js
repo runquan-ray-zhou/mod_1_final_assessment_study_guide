@@ -412,7 +412,7 @@ function valuesArray(obj) {
 // console.log(roundUpDecimal(5.74)); // Output: 6
 
 function roundUpDecimal(num) {
-    return Math.ceil(num)
+    return Math.ceil(num);
 }
 
 // ------------------------------------------------------------
@@ -423,7 +423,7 @@ function roundUpDecimal(num) {
 // console.log(roundDownDecimal(5.74)); // Output: 5
 
 function roundDownDecimal(num) {
-    return Math.floor(num)
+    return Math.floor(num);
 }
 
 // ------------------------------------------------------------
@@ -434,7 +434,7 @@ function roundDownDecimal(num) {
 // console.log(sumArrayReduce([1, 2, 3, 4, 5])); // Output: 15
 
 function sumArrayReduce(arr) {
-    return arr.reduce((acc, cur) => acc + cur)
+    return arr.reduce((acc, cur) => acc + cur);
 }
 
 // ------------------------------------------------------------
@@ -445,7 +445,7 @@ function sumArrayReduce(arr) {
 // console.log(productArrayReduce([1, 2, 3, 4, 5])); // Output: 120
 
 function productArrayReduce(arr) {
-    return arr.reduce((acc, cur) => acc * cur, 1)
+    return arr.reduce((acc, cur) => acc * cur, 1);
 }
 
 // ------------------------------------------------------------
@@ -454,6 +454,10 @@ function productArrayReduce(arr) {
 
 // console.log(averageArray([1, 2, 3, 4])); // Output: 2.5
 // console.log(averageArray([1, 2, 3, 4, 5])); // Output: 3
+
+function averageArray(arr) {
+    return arr.reduce((arr, cur) => arr + cur)/arr.length
+}
 
 // ------------------------------------------------------------
 
