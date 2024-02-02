@@ -534,6 +534,16 @@ function countOccurrences(arr, target) {
 // console.log(areAllSameType([1, 2, 'three'])); // Output: false
 // console.log(areAllSameType([1, 2, 3])); // Output: true
 
+function areAllSameType(arr) {
+    let output = "true";
+
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (typeof arr[i] !== typeof arr[i + 1]) return "false";
+    }
+
+    return output;
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to find the index of the first occurrence of a given element in an array.
