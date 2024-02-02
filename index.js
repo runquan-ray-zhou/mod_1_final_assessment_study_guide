@@ -773,6 +773,11 @@ function sortObjectsByProperty(arr, targetKey) {
 
 // console.log(removeDuplicates([1, 2, 2, 3])); // Output: [1, 2, 3]
 
+function removeDuplicates(arr) {
+    return arr.reduce((acc, cur) => { if (!acc.includes(cur)) acc.push(cur);
+        return acc }, [])
+}
+
 // ------------------------------------------------------------
 
 // BONUS
