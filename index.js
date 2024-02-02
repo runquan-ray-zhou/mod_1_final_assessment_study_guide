@@ -789,9 +789,13 @@ function removeDuplicates(arr) {
 // console.log(filterObjectsByProperty([
 //   { name: 'John', age: 30, city: 'New York' },
 //   { name: 'Jane', age: 25, city: 'San Francisco' },
-//   { name: 'Bob', age: 35, city: 'New York' }
+//   { name: 'Bob', age: 35, city: 'New York' },
 // ], 'city', 'New York')); 
 // Output: [ { name: 'John', age: 30, city: 'New York' }, { name: 'Bob', age: 35, city: 'New York' } ]
+
+function filterObjectsByProperty(arr, key, value) {
+    return arr.filter(obj => obj[key] && obj[key] === value)
+}
 
 // ------------------------------------------------------------
 
