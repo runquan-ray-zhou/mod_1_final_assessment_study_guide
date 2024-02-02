@@ -456,7 +456,7 @@ function productArrayReduce(arr) {
 // console.log(averageArray([1, 2, 3, 4, 5])); // Output: 3
 
 function averageArray(arr) {
-    return arr.reduce((arr, cur) => arr + cur)/arr.length
+    return arr.reduce((arr, cur) => arr + cur)/arr.length;
 }
 
 // ------------------------------------------------------------
@@ -467,7 +467,7 @@ function averageArray(arr) {
 // console.log(factorial(6)); // Output: 720
 
 function factorial(num) {
-    let output = 1
+    let output = 1;
 
     for (let i = 1; i <= num; i++) {
         output *= i;
@@ -484,7 +484,7 @@ function factorial(num) {
 // console.log(reverseString("hello world")); // Output: 'dlrow olleh'
 
 function reverseString(str) {
-    return str.split("").reverse().join("")
+    return str.split("").reverse().join("");
 }
 
 // ------------------------------------------------------------
@@ -495,7 +495,7 @@ function reverseString(str) {
 // console.log(celsiusToFahrenheit(31)); // Output: 87.8
 
 function celsiusToFahrenheit(temp) {
-    return (temp * 9/5) + 32
+    return (temp * 9/5) + 32;
 }
 
 // ------------------------------------------------------------
@@ -506,7 +506,7 @@ function celsiusToFahrenheit(temp) {
 // console.log(findLongestWord("The brown fox")); // Output: 'brown'
 
 function findLongestWord(str) {
-    return str.split(" ").reduce((acc, cur) => acc.length > cur.length ? cur = acc : cur)
+    return str.split(" ").reduce((acc, cur) => acc.length > cur.length ? cur = acc : cur);
 }
 
 // ------------------------------------------------------------
@@ -516,6 +516,16 @@ function findLongestWord(str) {
 // console.log(countOccurrences([1, 2, 2, 3], 2)); // Output: 2
 // console.log(countOccurrences([1, 2, 2, 3, 4, 5, 3, 3, 3], 3)); // Output: 4
 // console.log(countOccurrences([1, 2, 2, 3, 4, 5, 3, 3, 3], 7)); // Output: 0
+
+function countOccurrences(arr, target) {
+    let count = 0;
+
+    for (let ele of arr) {
+        if (ele === target) count ++;
+    }
+
+    return count;
+}
 
 // ------------------------------------------------------------
 
