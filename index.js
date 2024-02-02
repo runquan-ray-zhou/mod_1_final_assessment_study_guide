@@ -433,6 +433,10 @@ function roundDownDecimal(num) {
 // console.log(sumArrayReduce([1, 2, 3, 4])); // Output: 10
 // console.log(sumArrayReduce([1, 2, 3, 4, 5])); // Output: 15
 
+function sumArrayReduce(arr) {
+    return arr.reduce((acc, cur) => acc + cur)
+}
+
 // ------------------------------------------------------------
 
 // Create a function to return the product of all numbers in an array using the .reduce method.
