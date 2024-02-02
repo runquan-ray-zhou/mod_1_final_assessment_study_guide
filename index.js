@@ -719,8 +719,12 @@ function removeProperty(obj, targetKey) {
 
 // Write a function that takes two objects and merges them into a new object.
 
-// console.log(mergeObjects({ name: 'John' }, { age: 30 })); 
+console.log(mergeObjects({ name: 'John' }, { age: 30 })); 
 // Output: { name: 'John', age: 30 }
+
+function mergeObjects(obj1, obj2) {
+    return Object.assign(obj1, obj2);
+}
 
 // ------------------------------------------------------------
 
