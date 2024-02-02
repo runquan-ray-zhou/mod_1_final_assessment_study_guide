@@ -284,10 +284,10 @@ function oddNumbersUsingLoop(arr) {
     let newArray = [];
 
     for (let num of arr) {
-       if (num % 2 === 1) newArray.push(num)
+       if (num % 2 === 1) newArray.push(num);
     }
 
-    return newArray;
+    return newArray;;
 }
 
 // ------------------------------------------------------------
@@ -298,7 +298,7 @@ function oddNumbersUsingLoop(arr) {
 // console.log(oddNumbersUsingFilter([2, 3, 4, 5, 6, 7])); // Output: [3, 5 ,7]
 
 function oddNumbersUsingFilter(arr) {
-    return arr.filter(num => num % 2 === 1)
+    return arr.filter(num => num % 2 === 1);
 }
 
 // ------------------------------------------------------------
@@ -310,13 +310,13 @@ function oddNumbersUsingFilter(arr) {
 // console.log(findElementUsingLoop([1, 2, 3, 4 ,5], 6)); // Output: "ERROR"
 
 function findElementUsingLoop(arr, target) {
-    let output = "ERROR"
+    let output = "ERROR";
 
     for (let ele of arr) {
-        if (ele === target) output = ele
+        if (ele === target) output = ele;
     }
 
-    return output
+    return output;
 }
 
 // ------------------------------------------------------------
@@ -328,9 +328,9 @@ function findElementUsingLoop(arr, target) {
 
 function findElementUsingFind(arr, target) {
 
-    const output = arr.find(ele => ele === target)
+    const output = arr.find(ele => ele === target);
     
-    return output ? output : "ERROR"
+    return output ? output : "ERROR";
 }
 
 // ------------------------------------------------------------
@@ -338,10 +338,17 @@ function findElementUsingFind(arr, target) {
 // Develop a function to set a key in an object to a value if it doesn't exist, and return the object. If the key exists, return the object as is.
 
 // console.log(setKeyValueInObject({ key1: 'value1' }, 'key2', 'value2')); 
-// Output: { key1: 'value1', key2: 'value2' }
+// // Output: { key1: 'value1', key2: 'value2' }
 
 // console.log(setKeyValueInObject({ key1: 'value1' }, 'key1', 'value2')); 
 // Output: { key1: 'value1' }
+
+function setKeyValueInObject(obj, key, value) {
+
+    if(!obj[key]) obj[key] = value
+
+    return obj
+}
 
 // ------------------------------------------------------------
 
