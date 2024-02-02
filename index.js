@@ -267,7 +267,7 @@ function doubleNumbersUsingLoop(arr) {
 // Write a function to create a new array with all numbers doubled using the .map method.
 
 // console.log(doubleNumbersUsingMap([1, 2, 3])); // Output: [2, 4, 6]
-// console.log(doubleNumbersUsingLoop([1, 3, 7, 10])); // Output: [2, 6, 14, 20]
+// console.log(doubleNumbersUsingMap([1, 3, 7, 10])); // Output: [2, 6, 14, 20]
 
 function doubleNumbersUsingMap(arr) {
     return arr.map(num => num * 2);
@@ -295,7 +295,7 @@ function oddNumbersUsingLoop(arr) {
 // Create a function to create a new array with only the odd numbers using the .filter method.
 
 // console.log(oddNumbersUsingFilter([1, 2, 3])); // Output: [1, 3]
-// console.log(oddNumbersUsingLoop([2, 3, 4, 5, 6, 7])); // Output: [3, 5 ,7]
+// console.log(oddNumbersUsingFilter([2, 3, 4, 5, 6, 7])); // Output: [3, 5 ,7]
 
 function oddNumbersUsingFilter(arr) {
     return arr.filter(num => num % 2 === 1)
@@ -323,8 +323,15 @@ function findElementUsingLoop(arr, target) {
 
 // Write a function to find an element in an array using the .find method.
 
-// console.log(findElementUsingLoop(["a", "b", "c", "d"], "c")); // Output: "c"
-// console.log(findElementUsingLoop([1, 2, 3, 4 ,5], 6)); // Output: "ERROR"
+// console.log(findElementUsingFind(["a", "b", "c", "d"], "c")); // Output: "c"
+// console.log(findElementUsingFind([1, 2, 3, 4 ,5], 6)); // Output: "ERROR"
+
+function findElementUsingFind(arr, target) {
+
+    const output = arr.find(ele => ele === target)
+    
+    return output ? output : "ERROR"
+}
 
 // ------------------------------------------------------------
 
