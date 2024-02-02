@@ -763,6 +763,10 @@ function findObjectWithLongestValue(arr) {
 // ], 'age')); 
 // Output: [ { name: 'Jane', age: 25 }, { name: 'John', age: 30 }, { name: 'Bob', age: 35 } ]
 
+function sortObjectsByProperty(arr, targetKey) {
+    return arr.sort((a, b) => a[targetKey] - b[targetKey]);
+}
+
 // ------------------------------------------------------------
 
 // Write a function to remove duplicates from an array.
