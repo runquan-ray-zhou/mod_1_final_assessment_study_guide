@@ -574,6 +574,10 @@ function reverseArray(arr) {
 // console.log(capitalizeFirstLetter("hello")); // Output: 'Hello'
 // console.log(capitalizeFirstLetter("hello world")); // Output: 'Hello world'
 
+function capitalizeFirstLetter(str) {
+    return str[0].toUpperCase() + str.slice(1)
+}
+
 // ------------------------------------------------------------
 
 // Write a function to check if a given number is within a specified range.
