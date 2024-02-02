@@ -345,9 +345,9 @@ function findElementUsingFind(arr, target) {
 
 function setKeyValueInObject(obj, key, value) {
 
-    if(!obj[key]) obj[key] = value
+    if(!obj[key]) obj[key] = value;
 
-    return obj
+    return obj;
 }
 
 // ------------------------------------------------------------
@@ -358,8 +358,8 @@ function setKeyValueInObject(obj, key, value) {
 // console.log(uniqueElementsArray([1, 2, 2, 3, 3, 4, 3, 2])); // Output: [1, 2, 3, 4]
 
 function uniqueElementsArray(arr) {
-    return arr.reduce((acc, cur) => { if(!acc.includes(cur)) acc.push(cur) 
-        return acc }, [] )
+    return arr.reduce((acc, cur) => { if(!acc.includes(cur)) acc.push(cur);
+        return acc }, [] );
 }
 
 // ------------------------------------------------------------
@@ -371,6 +371,16 @@ function uniqueElementsArray(arr) {
 
 // console.log(elementsCountObject(["a", "b", "b", "a", "c", "d", "a"])); 
 // Output: { a: 3, b: 2, c: 1, d: 1 }
+
+function elementsCountObject(arr) {
+    let obj = {};
+
+    for (let ele of arr) {
+        obj[ele] = obj[ele] + 1 || 1;
+    }
+
+    return obj;
+}
 
 // ------------------------------------------------------------
 
