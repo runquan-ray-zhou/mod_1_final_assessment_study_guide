@@ -594,8 +594,8 @@ function isNumberInRange(num, start, end) {
 
 // Develop a function to count the number of vowels in a string.
 
-console.log(countVowels("Hello, World!")); // Output: 3
-console.log(countVowels("Good Morning")); // Output: 4
+// console.log(countVowels("Hello, World!")); // Output: 3
+// console.log(countVowels("Good Morning")); // Output: 4
 
 function countVowels(str) {
 
@@ -615,6 +615,10 @@ function countVowels(str) {
 
 // console.log(calculateCircleArea(5)); // Output: 78.54
 // console.log(calculateCircleArea(6)); // Output: 113.1
+
+function calculateCircleArea(radius) {
+    return 3.14 * (radius * radius)
+}
 
 // ------------------------------------------------------------
 
