@@ -422,6 +422,10 @@ function roundUpDecimal(num) {
 // console.log(roundDownDecimal(3.14)); // Output: 3
 // console.log(roundDownDecimal(5.74)); // Output: 5
 
+function roundDownDecimal(num) {
+    return Math.floor(num)
+}
+
 // ------------------------------------------------------------
 
 // Develop a function to return the sum of all numbers in an array using the .reduce method.
