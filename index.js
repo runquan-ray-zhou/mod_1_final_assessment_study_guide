@@ -411,6 +411,10 @@ function valuesArray(obj) {
 // console.log(roundUpDecimal(3.14)); // Output: 4
 // console.log(roundUpDecimal(5.74)); // Output: 6
 
+function roundUpDecimal(num) {
+    return Math.ceil(num)
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to round down a decimal number.
