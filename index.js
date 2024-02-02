@@ -294,8 +294,12 @@ function oddNumbersUsingLoop(arr) {
 
 // Create a function to create a new array with only the odd numbers using the .filter method.
 
-// console.log(oddNumbersUsingFilter([1, 2, 3])); // Output: [1, 3]
+console.log(oddNumbersUsingFilter([1, 2, 3])); // Output: [1, 3]
 // console.log(oddNumbersUsingLoop([2, 3, 4, 5, 6, 7])); // Output: [3, 5 ,7]
+
+function oddNumbersUsingFilter(arr) {
+    return arr.filter(num => num % 2 === 1)
+}
 
 // ------------------------------------------------------------
 
