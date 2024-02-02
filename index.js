@@ -640,6 +640,21 @@ function removeSpecificCharacters(str, char) {
 //   { key: 'array2', value: [1, 2, 3, 4, 5] }
 // ])); // Output: { key: 'array2', value: [1, 2, 3, 4, 5] }
 
+function objectWithLongestArray(arr) {
+    let longestArrayLength = -Infinity;
+    let objectWithLongestArrayValue;
+
+    for (let obj of arr) {
+        for (let key in obj) {
+            if (typeof obj[key] === "object" && obj[key].length > longestArrayLength) {
+                longestArrayLength = obj[key].length;
+                objectWithLongestArrayValue = obj;
+            }
+        }
+    }
+    return objectWithLongestArrayValue
+}
+
 // ------------------------------------------------------------
 
 // Develop a function to return a new array of only the values of a specified key from an array of objects.
