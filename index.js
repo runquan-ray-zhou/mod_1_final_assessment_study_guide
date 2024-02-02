@@ -563,6 +563,10 @@ function findIndexOfElement(arr, ele) {
 // console.log(reverseArray([1, 2, 3])); // Output: [3, 2, 1]
 // console.log(reverseArray([3, 2, 1])); // Output: [1, 2, 3]
 
+function reverseArray(arr) {
+    return arr.reverse()
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to capitalize the first letter of a string.
