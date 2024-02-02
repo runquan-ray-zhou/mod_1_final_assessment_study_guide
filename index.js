@@ -466,6 +466,16 @@ function averageArray(arr) {
 // console.log(factorial(5)); // Output: 120
 // console.log(factorial(6)); // Output: 720
 
+function factorial(num) {
+    let output = 1
+
+    for (let i = 1; i <= num; i++) {
+        output *= i;
+    }
+
+    return output;
+}
+
 // ------------------------------------------------------------
 
 // Develop a function to return the reverse of a given string.
