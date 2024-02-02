@@ -652,7 +652,8 @@ function objectWithLongestArray(arr) {
             }
         }
     }
-    return objectWithLongestArrayValue
+
+    return objectWithLongestArrayValue;
 }
 
 // ------------------------------------------------------------
@@ -670,6 +671,18 @@ function objectWithLongestArray(arr) {
 //   { name: 'Jane', age: 25 },
 //   { name: 'Bob', age: 35 }
 // ], 'name')); // Output: ["John", "Jane", "Bob"]
+
+function arrayValuesByKey(arr, targetKey) {
+    let keyArray = [];
+
+    for (let obj of arr) {
+        for (let key in obj) {
+            if (key === targetKey) keyArray.push(obj[key]);
+        }
+    }
+
+    return keyArray;
+}
 
 // ------------------------------------------------------------
 
