@@ -505,6 +505,10 @@ function celsiusToFahrenheit(temp) {
 // console.log(findLongestWord("The quickest brown fox")); // Output: 'quickest'
 // console.log(findLongestWord("The brown fox")); // Output: 'brown'
 
+function findLongestWord(str) {
+    return str.split(" ").reduce((acc, cur) => acc.length > cur.length ? cur = acc : cur)
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to count the occurrences of a specific element in an array.
