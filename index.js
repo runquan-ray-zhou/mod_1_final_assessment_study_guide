@@ -706,6 +706,15 @@ function roundToNearestWholeNumber(num) {
 // console.log(removeProperty({ name: 'John', age: 30 }, 'name')); 
 // Output: { age: 30 }
 
+function removeProperty(obj, targetKey) {
+    
+    for (let key in obj) {
+        if (key === targetKey) delete obj[key];
+    }
+
+    return obj;
+}
+
 // ------------------------------------------------------------
 
 // Write a function that takes two objects and merges them into a new object.
