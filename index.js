@@ -617,7 +617,7 @@ function countVowels(str) {
 // console.log(calculateCircleArea(6)); // Output: 113.1
 
 function calculateCircleArea(radius) {
-    return 3.14 * (radius * radius)
+    return 3.14 * (radius * radius);
 }
 
 // ------------------------------------------------------------
@@ -626,6 +626,10 @@ function calculateCircleArea(radius) {
 
 // console.log(removeSpecificCharacters("Hello, World!", "l")); // Output: 'Heo, Word!'
 // console.log(removeSpecificCharacters("Hello, World!", "o")); // Output: 'Hell, Wrld!'
+
+function removeSpecificCharacters(str, char) {
+    return str.split("").filter(ele => ele !== char).join("");
+}
 
 // ------------------------------------------------------------
 
