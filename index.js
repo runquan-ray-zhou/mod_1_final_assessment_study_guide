@@ -583,8 +583,13 @@ function capitalizeFirstLetter(str) {
 // Write a function to check if a given number is within a specified range.
 
 // console.log(isNumberInRange(5, 1, 10)); // Output: true
-//                            (num, start, end)
+                        //    (num, start, end)
 // console.log(isNumberInRange(12, 1, 10)); // Output: false
+
+function isNumberInRange(num, start, end) {
+
+    return num >= start && num <= end
+}
 
 // ------------------------------------------------------------
 
