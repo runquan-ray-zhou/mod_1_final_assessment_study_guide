@@ -494,6 +494,10 @@ function reverseString(str) {
 // console.log(celsiusToFahrenheit(25)); // Output: 77
 // console.log(celsiusToFahrenheit(31)); // Output: 87.8
 
+function celsiusToFahrenheit(temp) {
+    return (temp * 9/5) + 32
+}
+
 // ------------------------------------------------------------
 
 // Write a function to find the longest word in a given string.
