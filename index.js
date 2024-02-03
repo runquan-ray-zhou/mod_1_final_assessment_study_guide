@@ -894,6 +894,16 @@ function mergeSortedArrays(arr1, arr2) {
 
 // console.log(extractNumbersFromString("Age: 25, Height: 180cm")); // Output: [2, 5, 1, 8, 0]
 
+function extractNumbersFromString (str) {
+    let outputArray = []
+
+    for (let char of str) {
+        if (parseFloat(char) == char) outputArray.push(Number(char))
+    }
+
+    return outputArray
+}
+
 // ------------------------------------------------------------
 
 // Write a function to calculate the area of a rectangle given its length and width.
