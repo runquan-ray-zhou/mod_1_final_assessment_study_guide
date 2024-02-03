@@ -884,6 +884,10 @@ function isPrime(num) {
 
 // console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
 
+function mergeSortedArrays(arr1, arr2) {
+    return arr1.concat(arr2).sort((a, b) => a - b)
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to extract numbers from a string and return them as an array.
