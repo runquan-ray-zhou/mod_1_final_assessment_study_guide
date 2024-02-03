@@ -859,6 +859,10 @@ function findSecondLargestNumber (arr) {
 
 // console.log(sortAlphabetically(["banana", "apple", "orange"])); // Output: ['apple', 'banana', 'orange']
 
+function sortAlphabetically(arr) {
+    return arr.sort((a, b) => a.localeCompare(b))
+}
+
 // ------------------------------------------------------------
 
 // Write a function to check if a number is prime.
