@@ -920,6 +920,22 @@ function calculateRectangleArea(length, width) {
 
 // console.log(generateFibonacciSequence(5)); // Output: [0, 1, 1, 2, 3]
 
+function generateFibonacciSequence(num) {
+    let fibonacciSequence = [0, 1];
+
+    if (num === 0) {
+      fibonacciSequence = [];
+    } else if (num === 1) {
+      fibonacciSequence.pop(1);
+    } else {
+    for (let i = 2; i < num; i++) {
+       fibonacciSequence.push(fibonacciSequence[i - 1] + fibonacciSequence[i - 2]);
+      }
+    }
+
+    return fibonacciSequence;
+}
+
 // ------------------------------------------------------------
 
 // Write a function to check if a given year is a leap year.
