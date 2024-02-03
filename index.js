@@ -869,6 +869,15 @@ function sortAlphabetically(arr) {
 
 // console.log(isPrime(7)); // Output: true
 
+function isPrime(num) {
+
+    for (let i = 2; i < num; i++) {
+        if (num % i !== 0) return true;
+      }
+
+    return false;
+}
+
 // ------------------------------------------------------------
 
 // Create a function to merge two sorted arrays into a new sorted array.
