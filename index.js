@@ -835,6 +835,10 @@ function containsSubstring(str, substr) {
 
 // console.log(generateRandomNumber(1, 10)); // Output: Random number between 1 and 10
 
+function generateRandomNumber(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
 // ------------------------------------------------------------
 
 // Develop a function to find the second largest number in an array.
