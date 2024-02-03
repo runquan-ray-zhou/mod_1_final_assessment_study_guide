@@ -846,11 +846,11 @@ function generateRandomNumber(min, max) {
 // console.log(findSecondLargestNumber([1, 5, 3, 8, 2])); // Output: 5
 
 function findSecondLargestNumber (arr) {
-    const maxNum = Math.max(...arr)
+    const maxNum = Math.max(...arr);
 
-    const sortArray = arr.filter(ele => ele !== maxNum).sort((a, b) => a - b)
+    const sortArray = arr.filter(ele => ele !== maxNum).sort((a, b) => a - b);
 
-    return sortArray[sortArray.length - 1]
+    return sortArray[sortArray.length - 1];
 }
 
 // ------------------------------------------------------------
@@ -860,7 +860,7 @@ function findSecondLargestNumber (arr) {
 // console.log(sortAlphabetically(["banana", "apple", "orange"])); // Output: ['apple', 'banana', 'orange']
 
 function sortAlphabetically(arr) {
-    return arr.sort((a, b) => a.localeCompare(b))
+    return arr.sort((a, b) => a.localeCompare(b));
 }
 
 // ------------------------------------------------------------
@@ -885,7 +885,7 @@ function isPrime(num) {
 // console.log(mergeSortedArrays([1, 3, 5], [2, 4, 6])); // Output: [1, 2, 3, 4, 5, 6]
 
 function mergeSortedArrays(arr1, arr2) {
-    return arr1.concat(arr2).sort((a, b) => a - b)
+    return arr1.concat(arr2).sort((a, b) => a - b);
 }
 
 // ------------------------------------------------------------
@@ -895,13 +895,13 @@ function mergeSortedArrays(arr1, arr2) {
 // console.log(extractNumbersFromString("Age: 25, Height: 180cm")); // Output: [2, 5, 1, 8, 0]
 
 function extractNumbersFromString (str) {
-    let outputArray = []
+    let outputArray = [];
 
     for (let char of str) {
-        if (parseFloat(char) == char) outputArray.push(Number(char))
+        if (parseFloat(char) == char) outputArray.push(Number(char));
     }
 
-    return outputArray
+    return outputArray;
 }
 
 // ------------------------------------------------------------
@@ -909,6 +909,10 @@ function extractNumbersFromString (str) {
 // Write a function to calculate the area of a rectangle given its length and width.
 
 // console.log(calculateRectangleArea(5, 10)); // Output: 50
+
+function calculateRectangleArea(length, width) {
+    return length * width;
+}
 
 // ------------------------------------------------------------
 
