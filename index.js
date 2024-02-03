@@ -955,7 +955,7 @@ function generateFibonacciSequence(num) {
 // console.log(reverseWordsInSentence("Hello, World!")); // Output: 'World! Hello,'
 
 function reverseWordsInSentence(str) {
-    return str.split(" ").reverse().join(" ")
+    return str.split(" ").reverse().join(" ");
 }
 
 // ------------------------------------------------------------
@@ -965,7 +965,7 @@ function reverseWordsInSentence(str) {
 // console.log(areAnagrams("listen", "silent")); // Output: true
 
 function areAnagrams(str1, str2) {
-    return (str1.split("").sort().join("") === str2.split("").sort().join(""))
+    return (str1.split("").sort().join("") === str2.split("").sort().join(""));
 }
 
 // ------------------------------------------------------------
@@ -973,6 +973,12 @@ function areAnagrams(str1, str2) {
 // Write a function to check if a number is a power of two.
 
 // console.log(isPowerOfTwo(16)); // Output: true
+
+function isPowerOfTwo(num) {
+    const output = Math.sqrt(num);
+
+    return output === Math.round(output)
+}
 
 // ------------------------------------------------------------
 
