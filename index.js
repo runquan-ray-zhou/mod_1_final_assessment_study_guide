@@ -954,6 +954,10 @@ function generateFibonacciSequence(num) {
 
 // console.log(reverseWordsInSentence("Hello, World!")); // Output: 'World! Hello,'
 
+function reverseWordsInSentence(str) {
+    return str.split(" ").reverse().join(" ")
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to check if two strings are anagrams.
