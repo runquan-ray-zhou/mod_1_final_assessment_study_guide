@@ -845,6 +845,14 @@ function generateRandomNumber(min, max) {
 
 // console.log(findSecondLargestNumber([1, 5, 3, 8, 2])); // Output: 5
 
+function findSecondLargestNumber (arr) {
+    const maxNum = Math.max(...arr)
+
+    const sortArray = arr.filter(ele => ele !== maxNum).sort((a, b) => a - b)
+
+    return sortArray[sortArray.length - 1]
+}
+
 // ------------------------------------------------------------
 
 // Develop a function to sort an array of strings in alphabetical order.
