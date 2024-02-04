@@ -1057,6 +1057,14 @@ function isArraySortedAscending(arr) {
 
 // console.log(containsOnlyDigits("123")); // Output: true
 
+function containsOnlyDigits(str) {
+    for (let char of str) {
+        if (char != Number(char)) return false
+    }
+
+    return true
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to generate a random color code.
