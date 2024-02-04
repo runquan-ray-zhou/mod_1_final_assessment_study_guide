@@ -1002,6 +1002,10 @@ function rotateArrayLeft(arr, position) {
 
 // console.log(calculateSquareRoot(25)); // Output: 5
 
+function calculateSquareRoot(num) {
+    return Math.sqrt(num)
+}
+
 // ------------------------------------------------------------
 
 // Write a function to generate a random password of a specified length.
