@@ -1042,6 +1042,15 @@ function calculateSquareRoot(num) {
 
 // console.log(isArraySortedAscending([1, 2, 3, 4])); // Output: true
 
+function isArraySortedAscending(arr) {
+    
+    for (let i = 0; i < arr.length - 1; i++) {
+        if(arr[i] < arr[i + 1]) return true
+    }
+
+    return false
+}
+
 // ------------------------------------------------------------
 
 // Create a function to check if a string contains only digits.
