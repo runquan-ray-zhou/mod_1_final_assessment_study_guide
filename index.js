@@ -1119,6 +1119,16 @@ function isValidPalindromeSentence(str) {
 
 // console.log(compressString("aaabbbccc")); // Output: 'a3b3c3'
 
+function compressString(str) {
+    let outputObj = {};
+
+    for (let char of str) {
+        outputObj[char] = outputObj[char] + 1 || 1
+    }
+
+    return Object.entries(outputObj).flat().join("")
+}
+
 // ------------------------------------------------------------
 
 // Write a function to convert a decimal number to hexadecimal.
