@@ -977,7 +977,7 @@ function areAnagrams(str1, str2) {
 function isPowerOfTwo(num) {
     const output = Math.sqrt(num);
 
-    return output === Math.round(output)
+    return output === Math.round(output);
 }
 
 // ------------------------------------------------------------
@@ -985,6 +985,10 @@ function isPowerOfTwo(num) {
 // Develop a function to rotate elements in an array to the left by a given number of positions.
 
 // console.log(rotateArrayLeft([1, 2, 3, 4, 5], 2)); // Output: [3, 4, 5, 1, 2]
+
+function rotateArrayLeft(arr, position) {
+    return arr.concat(arr.splice(0, position));
+}
 
 // ------------------------------------------------------------
 
