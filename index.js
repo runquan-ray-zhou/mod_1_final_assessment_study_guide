@@ -1077,6 +1077,12 @@ function containsOnlyDigits(str) {
 
 // console.log(isValidPalindromeSentence("A man, a plan, a canal, Panama!")); // Output: true
 
+function isValidPalindromeSentence(str) {
+    const splitFilteredArray = str.split("").filter(ele => !(ele.toUpperCase() === ele.toLowerCase()))
+
+    return splitFilteredArray.join("").toLowerCase() === splitFilteredArray.reverse().join("").toLowerCase()
+}
+
 // ------------------------------------------------------------
 
 // Create a function to find the mode of an array.
