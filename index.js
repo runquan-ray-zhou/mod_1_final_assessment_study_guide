@@ -1091,7 +1091,30 @@ function isValidPalindromeSentence(str) {
 
 // Create a function to find the mode of an array.
 
-// console.log(findArrayMode([1, 2, 2, 3, 3, 4])); // Output: [2, 3]
+console.log(findArrayMode([1, 2, 2, 3, 3, 4])); // Output: [2, 3]
+
+function findArrayMode(arr) {
+    let frequencyObj = {};
+    
+    for (let ele of arr) {
+        frequencyObj[ele] = frequencyObj[ele] + 1 || 1;
+    }
+
+    let frequencyArray = Object.entries(frequencyObj);
+    let mode = [];
+    let max = -Infinity;
+
+    for (let subarray of frequencyArray) {
+        if (subarray[1] > max) {
+            max = subarray[1];
+            mode = [Number(subarray[0])];
+        } else if (subarray[1] === max) {
+            mode.push(Number(subarray[0]));
+        }
+    } 
+
+    return mode;
+}
 
 // ------------------------------------------------------------
 
