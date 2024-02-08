@@ -506,7 +506,7 @@ function celsiusToFahrenheit(temp) {
 // console.log(findLongestWord("The brown fox")); // Output: 'brown'
 
 function findLongestWord(str) {
-    return str.split(" ").reduce((acc, cur) => acc.length > cur.length ? cur = acc : cur);
+    return str.split(" ").reduce((acc, cur) => acc.length > cur.length ? acc : cur);
 }
 
 // ------------------------------------------------------------
@@ -898,7 +898,7 @@ function extractNumbersFromString (str) {
     let outputArray = [];
 
     for (let char of str) {
-        if (parseFloat(char) == char) outputArray.push(Number(char));
+        if (parseFloat(char) == char) outputArray.push(parseInt(char));
     }
 
     return outputArray;
@@ -947,6 +947,10 @@ function generateFibonacciSequence(num) {
 // Develop a function to convert a binary number to a decimal number.
 
 // console.log(decimalToBinary(10)); // Output: '1010'
+
+function decimalToBinary(num) {
+    return num.toString(2)
+}
 
 // ------------------------------------------------------------
 
