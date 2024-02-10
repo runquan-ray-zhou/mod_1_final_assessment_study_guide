@@ -1166,7 +1166,7 @@ function compressString(str) {
 
 // Create a function to check if a number is a palindrome.
 
-console.log(isNumberPalindrome(121)); // Output: true
+// console.log(isNumberPalindrome(121)); // Output: true
 
 function isNumberPalindrome(num) {
     let reverseNum = String(num).split("").reverse().join("");
@@ -1178,7 +1178,11 @@ function isNumberPalindrome(num) {
 
 // Implement a function to calculate the sum of digits in a given number.
 
-// console.log(calculateSumOfDigits(123)); // Output: 6
+console.log(calculateSumOfDigits(123)); // Output: 6
+
+function calculateSumOfDigits(num) {
+    return String(num).split("").map(ele => Number(ele)).reduce((a, b) => a + b)
+}
 
 // ------------------------------------------------------------
 
