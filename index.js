@@ -1091,7 +1091,7 @@ function isValidPalindromeSentence(str) {
 
 // Create a function to find the mode of an array.
 
-console.log(findArrayMode([1, 2, 2, 3, 3, 4])); // Output: [2, 3]
+// console.log(findArrayMode([1, 2, 2, 3, 3, 4])); // Output: [2, 3]
 
 function findArrayMode(arr) {
     let frequencyObj = {};
@@ -1192,11 +1192,23 @@ function compressString(str) {
 
 // console.log(findMissingNumber([1, 2, 3, 5])); // Output: 4
 
+function findMissingNumber(arr) {
+
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] + 1 !== arr[i + 1]) return arr[i] + 1
+    }
+
+}
+
 // ------------------------------------------------------------
 
 // Implement a function to check if a given string is an integer or a floating-point number.
 
 // console.log(isValidNumber("123.45")); // Output: true
+
+function isValidNumber(str) {
+    return Number(str) == str;
+}
 
 // ------------------------------------------------------------
 
