@@ -946,11 +946,7 @@ function generateFibonacciSequence(num) {
 
 // Develop a function to convert a binary number to a decimal number.
 
-// console.log(decimalToBinary(10)); // Output: '1010'
-
-function decimalToBinary(num) {
-    return num.toString(2)
-}
+// console.log(binaryToDecimal(1010)); // Output: 10
 
 // ------------------------------------------------------------
 
@@ -1039,6 +1035,10 @@ function calculateSquareRoot(num) {
 // Implement a function to convert a decimal number to binary.
 
 // console.log(decimalToBinary(10)); // Output: '1010'
+
+function decimalToBinary(num) {
+    return num.toString(2)
+}
 
 // ------------------------------------------------------------
 
@@ -1166,7 +1166,13 @@ function compressString(str) {
 
 // Create a function to check if a number is a palindrome.
 
-// console.log(isNumberPalindrome(121)); // Output: true
+console.log(isNumberPalindrome(121)); // Output: true
+
+function isNumberPalindrome(num) {
+    let reverseNum = String(num).split("").reverse().join("");
+
+    return String(num) === reverseNum;
+}
 
 // ------------------------------------------------------------
 
