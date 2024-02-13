@@ -972,12 +972,14 @@ function areAnagrams(str1, str2) {
 
 // Write a function to check if a number is a power of two.
 
-// console.log(isPowerOfTwo(16)); // Output: true
+console.log(isPowerOfTwo(16)); // Output: true
 
 function isPowerOfTwo(num) {
-    const output = Math.sqrt(num);
 
-    return output === Math.round(output);
+    while (num > 1) {
+        num / 2
+    }
+    return num === 1
 }
 
 // ------------------------------------------------------------
@@ -1189,6 +1191,18 @@ function calculateSumOfDigits(num) {
 // Write a function to find the least common multiple (LCM) of two numbers.
 
 // console.log(findLCM(12, 18)); // Output: 36
+
+function findLCM(num1, num2) {
+    let lcm;
+    let multiple = 0
+    while (num1 <= num2) {
+        if (num1 === num2) lcm = num1
+        multiple ++
+        num1 *= multiple
+        num2 *= multiple
+    }
+    return lcm
+}
 
 // ------------------------------------------------------------
 
