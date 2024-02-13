@@ -977,8 +977,9 @@ console.log(isPowerOfTwo(16)); // Output: true
 function isPowerOfTwo(num) {
 
     while (num > 1) {
-        num / 2
+        num /= 2
     }
+
     return num === 1
 }
 
@@ -1180,7 +1181,7 @@ function isNumberPalindrome(num) {
 
 // Implement a function to calculate the sum of digits in a given number.
 
-console.log(calculateSumOfDigits(123)); // Output: 6
+// console.log(calculateSumOfDigits(123)); // Output: 6
 
 function calculateSumOfDigits(num) {
     return String(num).split("").map(ele => Number(ele)).reduce((a, b) => a + b)
@@ -1193,16 +1194,27 @@ function calculateSumOfDigits(num) {
 // console.log(findLCM(12, 18)); // Output: 36
 
 function findLCM(num1, num2) {
-    let lcm;
-    let multiple = 0
-    while (num1 <= num2) {
-        if (num1 === num2) lcm = num1
-        multiple ++
-        num1 *= multiple
-        num2 *= multiple
+    let num1Array = [];
+    let num2Array = [];
+    let biggerNum;
+    if (num1 >= num2) {
+      biggerNum = num1;
+    } else {
+      biggerNum = num2;
     }
-    return lcm
-}
+    for (let i = 0; i <= biggerNum; i++) {
+      num1Array.push(num1 * i);
+      num2Array.push(num2 * i);
+    }
+    for (let j = 1; j < num1Array.length; j++) {
+      for (let k = 1; k < num2Array.length; k++) {
+        if (num1Array[j] === num2Array[k]) {
+           return num1Array[j]
+          break;
+        }
+      }
+    }
+  }
 
 // ------------------------------------------------------------
 
